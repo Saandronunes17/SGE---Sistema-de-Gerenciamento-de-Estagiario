@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IFB - Sistema de Gerenciamento de Estágio</title>
+    <!-- Ícone do site -->
+    <link rel="icon" href="img/ico-ifb.ico" type="image/x-icon">
+    <!-- Estilo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho com logotipo e nome do sistema -->
+    <header id="cabeca-login">
+        <div id="dados-login">
+            <a href="inicio-ex.html">
+                <img src="img/logo branca.png" alt="Logomarca do Instituto Federal de Brasília na cor branca"> SGE
+            </a>
+            <div>
+                <button id="botao-login">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <h1>NEWSLETTERS</h1>
+
+    <!-- Seção do carrossel de imagens -->
+    <div id="carrossel-container">
+        <div class="carrossel">
+            <img class="img-carrossel" src="img/estagio.png" alt="Imagem 1">
+            <img class="img-carrossel" src="img/Logo-SE.png" alt="Imagem 2">
+            <img class="img-carrossel" src="img/slide3.jpg" alt="Imagem 3">
+        </div>
+        <!-- Controles do Carrossel -->
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+    </div>
+
+    <h2>Cards</h2>
+    <div id="cards-news">
+        <a href=""><div class="cards-news"><img src="img/estagio.png" alt=""></div></a>
+        <a href=""><div class="cards-news"></div></a>
+        <a href=""><div class="cards-news"></div></a>
+        <a href=""><div class="cards-news"></div></a>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>Desenvolvido por 
+            <a href="">Pedro Simão</a>, 
+            <a href="">Sandro Nunes</a>, 
+            | 2024
+        </p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+
+        // Função para mudar o slide
+        function mudarSlide(n) {
+            mostrarSlide(slideIndex += n);
+        }
+
+        // Função para mostrar o slide atual
+        function mostrarSlide(n) {
+            const slides = document.querySelectorAll(".carrossel img");
+
+            // Se o índice for maior que o número de slides, reseta para o primeiro
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+
+            // Se o índice for menor que 0, vai para o último slide
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            // Ocultar todas as imagens
+            slides.forEach(slide => slide.classList.remove("active"));
+
+            // Mostrar a imagem atual
+            slides[slideIndex].classList.add("active");
+        }
+
+        // Inicialização do carrossel para mostrar o primeiro slide ao carregar
+        window.onload = function() {
+            mostrarSlide(slideIndex);
+        };
+    </script>
+
+</body>
+</html>

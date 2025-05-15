@@ -1,0 +1,479 @@
+/* Importando a fonte "Open Sans" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do cabeçalho parte do inicio */
+#cabeca-index {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0 px;
+    background-color: #2F9E41;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header img {
+    width: 6em;
+}
+
+.sge {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* Seção do formulário de login da página de inicio */
+.formu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#img-login {
+    width: 10em;
+}
+
+/* Estilo do título do sistema */
+#sistema {
+    font-size: 1.1em;
+    text-align: center;
+    font-family: "Open Sans bold", sans-serif;
+    margin-bottom: 20px;
+}
+
+.login {
+    padding: 0.3em;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 310px;
+}
+
+#botao-inicio {
+    background-color: #599124;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 15px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#botao-perso {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+/* Página de Menu */
+.inicio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2F9E41;
+    width: 23%;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sge-inicio-1, .sge-inicio {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.sge-inicio {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.inicio-in {
+    display: flex;
+    flex-direction: column;
+    background-color: #008000;
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.cad-inicio {
+    font-family: "Open Sans", sans-serif;
+    margin: 6px 0;
+    padding: 15px;
+    background-color: #599124;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#img-grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-img {
+    width: 1000px;
+}
+
+.log {
+    width: 100%;
+    padding: 15px;
+    background-color: #008000;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 51px;
+    background-color: #2F9E41;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    position: fixed;
+}
+
+
+
+/* Página de News */
+#cabeca-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 px;
+    background-color: #2F9E41;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#cards-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-news {
+    width: 300px;
+    height: 400px;
+    background-color: #dedede;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#botao-login {
+    background-color: #d7d7d7;
+    padding: 0.3em;
+    border-radius: 10px;
+    border: none;
+    width: 10em;
+    margin-left: 90em;
+    cursor: pointer;
+}
+
+#dados-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/*Carrosel em JavaScript*/
+
+/* Contêiner do carrossel */
+.carrossel-container {
+    position: relative;
+    width: 50%;
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo para as imagens */
+.carrossel img {
+    width: 100%;
+    display: none; /* As imagens começam invisíveis */
+}
+
+/* Visibilidade da imagem ativa */
+.carrossel img.active {
+    display: block;
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Página de Cadastro */
+#cabeca-incio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    
+    background-color: #2F9E41;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dddddd;
+    padding: 40px;
+    margin: 10em;
+    gap: 0.2em;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #a1a1a1;
+}
+
+#dados-user {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#img-user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#botao-sair {
+    background-color: #fd403d;
+    padding: 0.3em;
+    border-radius: 10px;
+    border: none;
+    width: 7em;
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #2F9E41;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Formulário CSS */
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 4em;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin: 20px;
+    background-color: #8BC34A;
+    color: #FFF;
+    border: 0;
+    border-radius: 5px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #F47E7E;
+}
+
+.nome, .date {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.nome {
+    margin-right: 70%;
+    margin: 0.5;
+}
+
+.date {
+    padding: 0.5em;
+    margin: 0.5;
+}
+
+h2 {
+    margin: 20px 0px;
+}
+
+/* Relatório CSS */
+#cards-relatorio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards-relatorio {
+    width: 229px;
+    height: 172px;
+    background-color: #a1a1a1;
+    margin: 30px;
+}
+
+/* Navegação exercício 2 */
+#nav-ex2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-ex2 {
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+
+}
+
+/* Cards de imagem */
+#img-card {
+    width: 19em;
+}
+
+#bt-login {
+    background-color: #8BC34A;
+    margin-left: 20em;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.wpp {
+    margin-left: 10px;
+    width: 30px;
+    color: #000000;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+    .inicio {
+        width: 70%;
+    }
+
+    #container-img {
+        width: 90%;
+    }
+
+    .cards-news, .cards-relatorio {
+        width: 80%;
+    }
+
+    #botao-login {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    section form {
+        margin: 2em;
+        padding: 20px;
+    }
+
+    #cabeca-index, #cabeca-login, #cabeca-incio {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .inicio {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .formu, #login {
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .cards-news, .cards-relatorio {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .log, .rodape, footer {
+        font-size: 0.8em;
+    }
+}
