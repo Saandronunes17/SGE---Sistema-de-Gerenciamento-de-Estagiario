@@ -17,4 +17,6 @@ O QUE FOI UTILIZADO ATÉ O MOMENTO:
 - JavaScript
 
 
+https://docs.google.com/document/d/1ipLuQJbtABZSLdFN3888CaE2rLtLK7xq/edit?usp=sharing&ouid=112334348115378923119&rtpof=true&sd=true
+
   
